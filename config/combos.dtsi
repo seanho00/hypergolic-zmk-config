@@ -18,10 +18,11 @@ compatible = "zmk,combos";
 // 20 21 22 23 24 | 25 26 27 28 29
 //          30 31 | 32 33
 
-COMBOALL(esc, &kp ESC, 0 1);
-COMBOALL(grave, &kp GRAVE, 1 2);
-COMBOALL(tab, &kp TAB, 10 11);
-COMBOALL(ret, &kp RET, 18 19);
+COMBO(esc, &kp ESC, 0 1, DEF_L);
+COMBO(grave, &kp GRAVE, 1 2, DEF_L);
+COMBO(tab, &kp TAB, 10 11, DEF_L);
+COMBO(ret, &kp RET, 18 19, DEF_L);
+COMBO(sqt, &kp SQT, 28 29, DEF_L);
 
 #undef COMBO
 #undef COMBOALL
