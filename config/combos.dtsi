@@ -1,16 +1,10 @@
 compatible = "zmk,combos";
 
-#define COMBO(NAME, BINDINGS, KEYPOS, LAYERS) \
+#define COMBO(LAYERS, KEYS, NAME, BINDINGS) \
   combo_##NAME { \
     bindings = <BINDINGS>; \
     key-positions = <KEYPOS>; \
     layers = <LAYERS>; \
-  }
-
-#define COMBOALL(NAME, BINDINGS, KEYPOS) \
-  combo_##NAME { \
-    bindings = <BINDINGS>; \
-    key-positions = <KEYPOS>; \
   }
 
 // 00 01 02 03 04 | 05 06 07 08 09
@@ -18,11 +12,32 @@ compatible = "zmk,combos";
 // 20 21 22 23 24 | 25 26 27 28 29
 //          30 31 | 32 33
 
-COMBO(esc, &kp ESC, 0 1, DEF_L);
-COMBO(grave, &kp GRAVE, 1 2, DEF_L);
-COMBO(tab, &kp TAB, 10 11, DEF_L);
-COMBO(ret, &kp RET, 18 19, DEF_L);
-COMBO(sqt, &kp SQT, 28 29, DEF_L);
+COMBO(DEF_L, 00 01,	esc,	&kp ESC);
+COMBO(DEF_L, 01 02,	grave,	&kp GRAVE);
+COMBO(DEF_L, 10 11,	tab,	&kp TAB);
+COMBO(DEF_L, 11 12,	lbkt,	&kp LBKT);
+COMBO(DEF_L, 12 13,	rbkt,	&kp RBKT);
+
+COMBO(DEF_L, 08 09,	bspc,	&kp BSPC);
+COMBO(DEF_L, 16 17,	minus,	&kp MINUS);
+COMBO(DEF_L, 17 18,	equal,	&kp EQUAL);
+COMBO(DEF_L, 18 19,	ret,	&kp RET);
+COMBO(DEF_L, 28 29,	sqt,	&kp SQT);
+
+COMBO(DEF_L, 06 07,	vol_up,	&kp C_VOL_UP);
+COMBO(DEF_L, 16 17,	vol_dn, &kp C_VOL_DN);
+COMBO(DEF_L, 26 27,	mute,	&kp &MUTE);
+
+COMBO(NUM_L, 00 01,	reset,	&reset);
+COMBO(NUM_L, 10 11,	boot,	&bootloader);
+COMBO(NUM_L, 01 03,	bt0,	&bt BT_SEL 0);
+COMBO(NUM_L, 11 13,	bt1,	&bt BT_SEL 1);
+COMBO(NUM_L, 21 23,	bt2,	&bt BT_SEL 2);
+COMBO(NUM_L, 11 12 13,	btclr,	&bt BT_CLR);
+
+COMBO(NAV_L, 08 18,	f11,	&kp F11);
+COMBO(NAV_L, 09 19,	f12,	&kp F12);
+COMBO(NAV_L, 05 06,	sleep,	&kp C_SLEEP);
+COMBO(NAV_L, 08 09,	lock,	&kp C_AL_LOCK);
 
 #undef COMBO
-#undef COMBOALL
