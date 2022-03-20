@@ -7,7 +7,7 @@ default_layer {
     &kp Q		&kp W		&kp E		&kp R		&kp T		&kp Y		&kp U		&kp I 		&kp O		&kp P
     &kp A		&kp S		&kp D		&kp F		&kp G		&kp H		&kp J		&kp K		&kp L		&kp SEMI
     &hm LGUI Z		&hm LALT X	&hm LSHFT C	&hm LCTRL V	&kp B		&kp N		&hm RCTRL M	&hm RSHFT COMMA	&hm RALT DOT	&hm RGUI FSLH
-    							&lt NAV_L BSPC	&kp LSHFT	&kp SPACE	&lt NUM_L RET
+    							&kp SHIFT	&lt NUM_L ESC	&lt NAV_L SPACE	&kp RET
   >;
 };
 
@@ -15,7 +15,7 @@ num_layer {
   label = "Num";
   bindings = <
     &kp N1		&kp N2		&kp N3		&kp N4		&kp N5		&kp N6		&kp N7		&kp N8		&kp N9		&kp N0
-    &kp MINUS		&kp EQUAL	&kp LBKT	&kp RBKT	t___		t___		&kp N4		&kp N5		&kp N6		&kp SQT
+    t___		t___		t___		t___		t___		t___		&kp N4		&kp N5		&kp N6		&kp SQT
     t___		t___		t___		t___		t___		t___		&kp N1		&kp N2		&kp N3		&kp BSLH
     							t___		t___		t___		t___
   >;
@@ -27,16 +27,6 @@ nav_layer {
     &kp F1		&kp F2		&kp F3		&kp F4		&kp F5		&kp F6		&kp F7		&kp F8		&kp F9		&kp F10
     t___		t___		t___		t___		t___		t___		&kp LEFT	&kp DOWN	&kp UP		&kp RIGHT
     t___		t___		t___		t___		t___		t___		&kp HOME	&kp PG_DN	&kp PG_UP	&kp END
-    							t___		t___		t___		t___
-  >;
-};
-
-app_layer {
-  label = "App";
-  bindings = <
-    &kp C_SLEEP		t___		t___		t___		t___		t___		&kp C_MUTE	&kp C_VOL_DN	&kp C_VOL_UP	&kp C_AL_LOCK
-    t___		t___		t___		t___		t___		t___		t___		t___		t___		t___
-    t___		t___		t___		t___		t___		t___		t___		t___		t___		t___
     							t___		t___		t___		t___
   >;
 };
