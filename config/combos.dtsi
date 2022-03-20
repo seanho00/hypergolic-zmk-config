@@ -26,7 +26,7 @@ COMBO(DEF_L, 28 29,	sqt,	&kp SQT);
 
 COMBO(DEF_L,  6  7,	vol_up,	&kp C_VOL_UP);
 COMBO(DEF_L, 16 17,	vol_dn, &kp C_VOL_DN);
-COMBO(DEF_L, 26 27,	mute,	&kp &MUTE);
+COMBO(DEF_L, 26 27,	mute,	&kp C_MUTE);
 
 COMBO(NUM_L,  0  1,	reset,	&reset);
 COMBO(NUM_L, 10 11,	boot,	&bootloader);
