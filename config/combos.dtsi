@@ -38,4 +38,6 @@ COMBO(NAV_L,  9 19,	f12,	&kp F12);
 COMBO(NAV_L,  5  6,	sleep,	&kp C_SLEEP);
 COMBO(NAV_L,  8  9,	lock,	&kp C_AL_LOCK);
 
+COMBO(DEF_L, 30 33,     capwd,  &caps_word);
+
 #undef COMBO
