@@ -12,19 +12,17 @@ compatible = "zmk,combos";
 // 20 21 22 23 24 | 25 26 27 28 29
 //          30 31 | 32 33
 
-COMBO(DEF_L,  0 10,	grave,	&kp GRAVE);
-COMBO(DEF_L, 10 11,	tab,	&kp TAB);
-COMBO(DEF_L, 11 12,	lbkt,	&kp LBKT);
-COMBO(DEF_L, 12 13,	rbkt,	&kp RBKT);
+COMBO(DEF_L NUM_L,  0 10,	grave,	&kp GRAVE);
+COMBO(DEF_L NUM_L, 10 11,	tab,	&kp TAB);
+COMBO(DEF_L NUM_L, 11 12,	lbkt,	&kp LBKT);
+COMBO(DEF_L NUM_L, 12 13,	rbkt,	&kp RBKT);
 
-COMBO(DEF_L,  8  9,	bslh,	&kp BSLH);
-COMBO(DEF_L, 16 17,	minus,	&kp MINUS);
-COMBO(DEF_L, 17 18,	equal,	&kp EQUAL);
-COMBO(DEF_L, 18 19,	sqt,	&kp SQT);
+COMBO(DEF_L NUM_L,  8  9,	bslh,	&kp BSLH);
+COMBO(DEF_L NUM_L, 16 17,	minus,	&kp MINUS);
+COMBO(DEF_L NUM_L, 17 18,	equal,	&kp EQUAL);
+COMBO(DEF_L NUM_L, 18 19,	sqt,	&kp SQT);
 
-COMBO(DEF_L,  5 15,	mute,	&kp C_MUTE);
-COMBO(DEF_L,  6 16,	vol_dn, &kp C_VOL_DN);
-COMBO(DEF_L,  7 17,	vol_up,	&kp C_VOL_UP);
+COMBO(DEF_L, 30 33,     capwd,  &caps_word);
 
 COMBO(NUM_L,  0 10,	reset,	&reset);
 COMBO(NUM_L, 10 20,	boot,	&bootloader);
@@ -34,8 +32,9 @@ COMBO(NUM_L,  0  3,	bt2,	&bt BT_SEL 2);
 COMBO(NUM_L,  0  4,	btclr,	&bt BT_CLR);
 
 COMBO(NAV_L,  0 10,	sleep,	&kp C_SLEEP);
+COMBO(NAV_L,  5 15,	mute,	&kp C_MUTE);
+COMBO(NAV_L,  6 16,	vol_dn, &kp C_VOL_DN);
+COMBO(NAV_L,  7 17,	vol_up,	&kp C_VOL_UP);
 COMBO(NAV_L,  9 19,	lock,	&kp C_AL_LOCK);
-
-COMBO(DEF_L, 30 33,     capwd,  &caps_word);
 
 #undef COMBO
