@@ -22,8 +22,8 @@ COMBO(DEF_L NUM_L, 16 17,	minus,	&kp MINUS);
 COMBO(DEF_L NUM_L, 17 18,	equal,	&kp EQUAL);
 COMBO(DEF_L NUM_L, 18 19,	sqt,	&kp SQT);
 
-COMBO(DEF_L,  0 31,	kbd,	&mo KBD_L);
-COMBO(DEF_L,  9 32,	kbd,	&mo KBD_L);
+COMBO(DEF_L,  0 31,	kbd_l,	&mo KBD_L);
+COMBO(DEF_L,  9 32,	kbd_r,	&mo KBD_L);
 COMBO(DEF_L, 30 33,     capwd,  &caps_word);
 
 COMBO(NAV_L,  0 10,	sleep,	&kp C_SLEEP);
