@@ -22,17 +22,10 @@ COMBO(DEF_L NUM_L, 16 17,	minus,	&kp MINUS);
 COMBO(DEF_L NUM_L, 17 18,	equal,	&kp EQUAL);
 COMBO(DEF_L NUM_L, 18 19,	sqt,	&kp SQT);
 
+COMBO(DEF_L,  0 31,	kbd,	&mo KBD_L);
+COMBO(DEF_L,  9 32,	kbd,	&mo KBD_L);
 COMBO(DEF_L, 30 33,     capwd,  &caps_word);
 
-COMBO(NUM_L,  0 20,	reset,	&reset);
-COMBO(NUM_L,  4 24,	boot,	&bootloader);
-COMBO(NUM_L,  0  1,	bt0,	&bt BT_SEL 0);
-COMBO(NUM_L,  0  2,	bt1,	&bt BT_SEL 1);
-COMBO(NUM_L,  0  3,	bt2,	&bt BT_SEL 2);
-COMBO(NUM_L,  0  4,	btclr,	&bt BT_CLR);
-
-COMBO(NAV_L,  9 29,	reset,	&reset);
-COMBO(NAV_L,  5 25,	boot,	&bootloader);
 COMBO(NAV_L,  0 10,	sleep,	&kp C_SLEEP);
 COMBO(NAV_L,  5 15,	mute,	&kp C_MUTE);
 COMBO(NAV_L,  6 16,	vol_dn, &kp C_VOL_DN);
