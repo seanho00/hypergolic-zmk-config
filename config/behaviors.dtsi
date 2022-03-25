@@ -4,7 +4,7 @@ lhm: left_homerow_mods {
   #binding-cells = <2>;
   bindings = <&kp>, <&kp>;
   flavor = "tap-unless-interrupted";
-  tapping-term-ms = <180>;
+  tapping-term-ms = <100>;
   quick_tap_ms = <100>;
   hold-trigger-key-positions = <
      5  6  7  8  9
