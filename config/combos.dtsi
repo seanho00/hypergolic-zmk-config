@@ -12,12 +12,23 @@ compatible = "zmk,combos";
 // 20 21 22 23 24 | 25 26 27 28 29
 //          30 31 | 32 33
 
-COMBO(DEF_L NUM_L,  0 10,	grave,	&kp GRAVE);
+COMBO(DEF_L NUM_L,  0 10,	excl,	&kp EXCL);
+COMBO(DEF_L NUM_L,  1 11,	at,	&kp AT);
+COMBO(DEF_L NUM_L,  2 12,	hash,	&kp HASH);
+COMBO(DEF_L NUM_L,  3 13,	dllr,	&kp DLLR);
+COMBO(DEF_L NUM_L,  4 14,	prcnt,	&kp PRCNT);
+COMBO(DEF_L NUM_L,  5 15,	caret,	&kp CARET);
+COMBO(DEF_L NUM_L,  6 16,	amps,	&kp AMPS);
+COMBO(DEF_L NUM_L,  7 17,	star,	&kp STAR);
+COMBO(DEF_L NUM_L,  8 18,	lpar,	&kp LPAR);
+COMBO(DEF_L NUM_L,  9 19,	rpar,	&kp RPAR);
+
+COMBO(DEF_L NUM_L,  0  1,	grave,	&kp GRAVE);
 COMBO(DEF_L NUM_L, 10 11,	tab,	&kp TAB);
 COMBO(DEF_L NUM_L, 11 12,	lbkt,	&kp LBKT);
 COMBO(DEF_L NUM_L, 12 13,	rbkt,	&kp RBKT);
 
-COMBO(DEF_L NUM_L,  9 19,	bslh,	&kp BSLH);
+COMBO(DEF_L NUM_L,  8  9,	bslh,	&kp BSLH);
 COMBO(DEF_L NUM_L, 16 17,	minus,	&kp MINUS);
 COMBO(DEF_L NUM_L, 17 18,	equal,	&kp EQUAL);
 COMBO(DEF_L NUM_L, 18 19,	sqt,	&kp SQT);
