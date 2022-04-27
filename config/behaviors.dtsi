@@ -5,7 +5,7 @@
     label = LABEL; \
     #binding-cells = <2>; \
     bindings = <&kp>, <&kp>; \
-    flavor = "tap-unless-interrupted"; \
+    flavor = "tap-preferred"; \
     tapping-term-ms = <150>; \
     quick-tap-ms = <100>; \
     hold-trigger-key-positions = <HOLD_TRIG>; \
