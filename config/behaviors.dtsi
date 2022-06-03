@@ -8,6 +8,7 @@
     flavor = "tap-preferred"; \
     tapping-term-ms = <150>; \
     quick-tap-ms = <100>; \
+    global-quick-tap; \
     hold-trigger-key-positions = <HOLD_TRIG>; \
   }
 
