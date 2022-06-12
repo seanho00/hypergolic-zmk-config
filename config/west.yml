@@ -6,8 +6,8 @@ manifest:
       url-base: https://github.com/Nicell
   projects:
     - name: zmk
-      remote: nicell
-      revision: split/idle-interval
+      remote: zmkfirmware
+      revision: main
       import: app/west.yml
   self:
     path: config
