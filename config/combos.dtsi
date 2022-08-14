@@ -24,11 +24,11 @@ COMBO(DEF_L NUM_L,  8 18,	lpar,	&kp LPAR);
 COMBO(DEF_L NUM_L,  9 19,	rpar,	&kp RPAR);
 
 COMBO(DEF_L NUM_L,  0  1,	grave,	&kp GRAVE);
-COMBO(DEF_L NUM_L,  1  2,	bslh,	&kp BSLH);
 COMBO(DEF_L NUM_L, 10 11,	tab,	&kp TAB);
 COMBO(DEF_L NUM_L, 11 12,	lbkt,	&kp LBKT);
 COMBO(DEF_L NUM_L, 12 13,	rbkt,	&kp RBKT);
 
+COMBO(DEF_L NUM_L,  7  9,	bslh,	&kp BSLH);
 COMBO(DEF_L NUM_L, 16 17,	minus,	&kp MINUS);
 COMBO(DEF_L NUM_L, 17 18,	equal,	&kp EQUAL);
 COMBO(DEF_L NUM_L, 18 19,	sqt,	&kp SQT);
