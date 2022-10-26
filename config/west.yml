@@ -1,4 +1,9 @@
+# https://docs.zephyrproject.org/latest/develop/west/manifest.html
+---
 manifest:
+  defaults:
+    remote: zmkfirmware
+    revision: main
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
@@ -6,12 +11,14 @@ manifest:
       url-base: https://github.com/ftc
   projects:
     - name: zmk
-      remote: zmkfirmware
-      revision: main
+      repo-path: zmk
       import: app/west.yml
-    - name: zmk
+      clone-depth: 1
+    - name: mouse-keys
       remote: ftc
+      repo-path: zmk
       revision: mouse-ftc
       import: app/west.yml
+      clone-depth: 1
   self:
     path: config
