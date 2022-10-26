@@ -7,6 +7,10 @@
 #include "kscan.dtsi"
 #include "layers.dtsi"
 
+&mt {
+  tapping-term-ms = <150>;
+}
+
 / {
   behaviors {
 #include "behaviors.dtsi"

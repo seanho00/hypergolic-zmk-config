@@ -1,7 +1,3 @@
-&mt {
-  tapping-term-ms = <150>;
-}
-
 #define HRM(NAME, LABEL, HOLD_TRIG) \
   NAME: hrm_##NAME { \
     compatible = "zmk,behavior-hold-tap"; \
