@@ -27,11 +27,11 @@ COMBO(DEF_L NUM_L,  0  1,	grave,	&kp GRAVE);
 COMBO(DEF_L NUM_L, 10 11,	tab,	&kp TAB);
 COMBO(DEF_L NUM_L, 11 12,	lbkt,	&kp LBKT);
 COMBO(DEF_L NUM_L, 12 13,	rbkt,	&kp RBKT);
-COMBO(DEF_L NUM_L, 10 20,	undo,	&kp C_AC_UNDO);
-COMBO(DEF_L NUM_L, 11 21,	cut,	&kp C_AC_CUT);
-COMBO(DEF_L NUM_L, 12 22,	copy,	&kp C_AC_COPY);
-COMBO(DEF_L NUM_L, 13 23,	paste,	&kp C_AC_PASTE);
-COMBO(DEF_L NUM_L, 14 24,	redo,	&kp C_AC_REDO);
+COMBO(DEF_L NUM_L, 10 20,	undo,	&kp LC(Z));
+COMBO(DEF_L NUM_L, 11 21,	cut,	&kp LC(X));
+COMBO(DEF_L NUM_L, 12 22,	copy,	&kp LC(C));
+COMBO(DEF_L NUM_L, 13 23,	paste,	&kp LC(V));
+COMBO(DEF_L NUM_L, 14 24,	redo,	&kp LC(Y));
 
 COMBO(DEF_L NUM_L,  7  9,	bslh,	&kp BSLH);
 COMBO(DEF_L NUM_L, 16 17,	minus,	&kp MINUS);
