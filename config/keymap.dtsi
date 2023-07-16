@@ -15,8 +15,8 @@ LAYER(base,
 );
 
 LAYER(num,
-    &kp F9         &kp F10        &kp F11        &kp F12        t___           t___           &kp N7         &kp N8         &kp N9         &kp N0
-    &kp F5         &kp F6         &kp F7         &kp F8         &kp BSPC       &kp DOT        &kp N4         &kp N5         &kp N6         t___
+    &kp F9         &kp F10        &kp F11        &kp F12        t___           &kp BSPC       &kp N7         &kp N8         &kp N9         &kp N0
+    &kp F5         &kp F6         &kp F7         &kp F8         t___           &kp DOT        &kp N4         &kp N5         &kp N6         t___
     &kp F1         &kp F2         &kp F3         &kp F4         &kp DEL        &kp COMMA      &kp N1         &kp N2         &kp N3         t___
                                                  t___           t___           t___           t___
 );
