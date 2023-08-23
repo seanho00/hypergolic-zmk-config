@@ -22,9 +22,9 @@ LAYER(num,
 );
 
 LAYER(nav,
-    t___           t___           t___           t___           t___           t___           t___           t___           t___           t___   
-    t___           t___           t___           t___           t___           &kp LEFT       &kp DOWN       &kp UP         &kp RIGHT      t___   
-    t___           t___           t___           t___           t___           &kp HOME       &kp PG_DN      &kp PG_UP      &kp END        t___   
+    t___           t___           &mmv MOVE_UP   &mwh SCROLL_UP t___           t___           &mkp LCLK      &mkp MCLK      &mkp RCLK      t___   
+    t___           &mmv MOVE_LEFT t___           &mmv MOVE_RIGHT t___          &kp LEFT       &kp DOWN       &kp UP         &kp RIGHT      t___   
+    t___           t___           &mmv MOVE_DOWN &mwh SCROLL_DOWN t___         &kp HOME       &kp PG_DN      &kp PG_UP      &kp END        t___   
                                                  t___           t___           t___           t___
 );
 
