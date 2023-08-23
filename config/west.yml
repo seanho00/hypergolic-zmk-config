@@ -9,12 +9,20 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: ftc
       url-base: https://github.com/ftc
+    - name: urob
+      url-base: https://github.com/urob
   projects:
-    - name: zmk
+    - name: upstream
       repo-path: zmk
       import: app/west.yml
       clone-depth: 1
-    - name: mouse-keys
+    - name: zmk
+      remote: urob
+      repo-path: zmk
+      revision: mouse-3.2
+      import: app/west.yml
+      clone-depth: 1
+    - name: ftc
       remote: ftc
       repo-path: zmk
       revision: mouse-ftc
