@@ -7,13 +7,13 @@
 manifest:
   defaults:
     remote: pete
-    repo-path: zmk
     revision: feat/pointers-move-scroll
   remotes:
     - name: pete
       url-base: https://github.com/petejohanson
   projects:
     - name: zmk
+      repo-path: zmk
       import: app/west.yml
       clone-depth: 1
   self:
