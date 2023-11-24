@@ -1,31 +1,19 @@
 # https://docs.zephyrproject.org/latest/develop/west/manifest.html
+# main: zmkfirmware:main
+# urob:mouse-3.2
+# ftc:mouse-ftc
+# PR 2027: petejohanson:feat/pointers-move-scroll
 ---
 manifest:
   defaults:
-    remote: zmkfirmware
-    revision: main
+    remote: pete
+    repo-path: zmk
+    revision: feat/pointers-move-scroll
   remotes:
-    - name: zmkfirmware
-      url-base: https://github.com/zmkfirmware
-    - name: ftc
-      url-base: https://github.com/ftc
-    - name: urob
-      url-base: https://github.com/urob
+    - name: pete
+      url-base: https://github.com/petejohanson
   projects:
-    - name: upstream
-      repo-path: zmk
-      import: app/west.yml
-      clone-depth: 1
     - name: zmk
-      remote: urob
-      repo-path: zmk
-      revision: mouse-3.2
-      import: app/west.yml
-      clone-depth: 1
-    - name: ftc
-      remote: ftc
-      repo-path: zmk
-      revision: mouse-ftc
       import: app/west.yml
       clone-depth: 1
   self:
