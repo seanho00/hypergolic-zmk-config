@@ -6,13 +6,22 @@
 ---
 manifest:
   defaults:
-    remote: pete
+    remote: petejohanson
     revision: feat/pointers-move-scroll
   remotes:
-    - name: pete
+    - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
+    - name: petejohanson
       url-base: https://github.com/petejohanson
   projects:
-    - name: zmk
+    - name: upstream
+      remote: zmkfirmware
+      repo-path: zmk
+      revision: main
+      import: app/west.yml
+      clone-depth: 1
+    - name: overlay
+      repo-path: zmk
       import: app/west.yml
       clone-depth: 1
   self:
