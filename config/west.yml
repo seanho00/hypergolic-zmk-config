@@ -5,23 +5,10 @@
 # PR 2027: petejohanson:feat/pointers-move-scroll
 ---
 manifest:
-  defaults:
-    remote: petejohanson
-    revision: feat/pointers-move-scroll
-  remotes:
-    - name: zmkfirmware
-      url-base: https://github.com/zmkfirmware
-    - name: petejohanson
-      url-base: https://github.com/petejohanson
   projects:
-    - name: upstream
-      remote: zmkfirmware
-      repo-path: zmk
-      revision: main
-      import: app/west.yml
-      clone-depth: 1
-    - name: overlay
-      repo-path: zmk
+    - name: zmk
+      url: https://github.com/petejohanson/zmk
+      revision: feat/pointers-move-scroll
       import: app/west.yml
       clone-depth: 1
   self:
