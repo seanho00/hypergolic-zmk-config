@@ -3,7 +3,7 @@ compatible = "zmk,keymap";
 #define t___ &trans
 #define LAYER(NAME, BINDINGS) \
   layer_##NAME { \
-    label = "NAME"; \
+    display-name = "NAME"; \
     bindings = <BINDINGS>; \
   }
 
