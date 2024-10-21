@@ -31,7 +31,7 @@ LAYER(nav,
 LAYER(kbd,
     t___           &sys_reset     &out OUT_TOG   &bt BT_CLR     &bootloader    &bootloader    t___           t___           &sys_reset     t___
     t___           &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   t___           t___           t___           t___           t___
-    t___           t___           t___           t___           t___           t___           t___           t___           t___           t___
+    t___           t___           t___           t___           &soft_off      &soft_off      t___           t___           t___           t___
                                                  t___           t___           t___           t___
 );
 
