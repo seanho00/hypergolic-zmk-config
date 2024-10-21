@@ -12,6 +12,10 @@
   tapping-term-ms = <150>;
 };
 
+&soft_off {
+  hold-time-ms = <1000>;
+};
+
 / {
   behaviors {
 #include "behaviors.dtsi"
